@@ -38,7 +38,7 @@ requirements:
     - retrying
     - six
     - typing
-    - werkzeug
+    - werkzeug 
 
 test:
   imports:

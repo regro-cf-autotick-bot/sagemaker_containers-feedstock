@@ -15,7 +15,7 @@ build:
     - serve=sagemaker_containers.cli.serve:main
     - train=sagemaker_containers.cli.train:main
   script: "{{ PYTHON }} -m pip install . -vv "
-  skip: True  # [win or py27]
+  skip: True  # [win]
 
 requirements:
   build:
@@ -38,7 +38,7 @@ requirements:
     - retrying
     - six
     - typing
-    - werkzeug
+    - werkzeug 
 
 test:
   imports:
@@ -46,7 +46,7 @@ test:
     - sagemaker_containers.beta
     - sagemaker_containers.beta.framework
     - sagemaker_containers.cli
-    - sagemaker_containers.etc
+    - sagemaker_containers.etc  # [py>=36]
 
 about:
   home: "https://github.com/aws/sagemaker-containers/"

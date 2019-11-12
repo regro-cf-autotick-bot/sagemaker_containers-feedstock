@@ -18,7 +18,7 @@ build:
   skip: True  # [win]
 
 requirements:
-  build: 
+  build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -46,7 +46,7 @@ test:
     - sagemaker_containers.beta
     - sagemaker_containers.beta.framework
     - sagemaker_containers.cli
-    - sagemaker_containers.etc
+    - sagemaker_containers.etc  # [py>=36]
 
 about:
   home: "https://github.com/aws/sagemaker-containers/"

@@ -39,6 +39,7 @@ requirements:
     - six
     - typing
     - werkzeug
+    - scipy
 
 test:
   imports:

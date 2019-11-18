@@ -39,10 +39,11 @@ requirements:
     - six
     - typing
     - werkzeug
-    - scipy
-    - protobuf3-to-dict
 
 test:
+  requires:
+    - scipy
+    - protobuf3-to-dict
   imports:
     - sagemaker_containers
     - sagemaker_containers.beta

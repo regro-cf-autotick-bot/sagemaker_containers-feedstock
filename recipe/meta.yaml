@@ -1,13 +1,13 @@
 {% set name = "sagemaker_containers" %}
-{% set version = "2.5.11" %}
+{% set version = "2.5.12" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "0db8554d04fe4af728388895be2eb3bc1b88f4719dea3bdba9935ed060ec6472"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 92b14ce9064c5b19bfbbb015d98dcd42977415fb0eadd90bfc2d7c5063f40a11
 
 build:
   number: 0
@@ -38,9 +38,12 @@ requirements:
     - retrying
     - six
     - typing
-    - werkzeug 
+    - werkzeug
 
 test:
+  requires:
+    - scipy
+    - protobuf3-to-dict
   imports:
     - sagemaker_containers
     - sagemaker_containers.beta

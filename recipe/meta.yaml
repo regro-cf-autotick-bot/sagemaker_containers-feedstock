@@ -40,7 +40,7 @@ requirements:
     - typing
     - werkzeug
     - scipy
-    - protobuf_to_dict
+    - protobuf3-to-dict
 
 test:
   imports:

@@ -1,5 +1,5 @@
 {% set name = "sagemaker_containers" %}
-{% set version = "2.8.3" %}
+{% set version = "2.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac6dbc411e0afaed7965eaa3e3958b9cf5b7fbccbe02032da99b9c526ea90b7a
+  sha256: 70ef21601ae473b4962ceb8c0a19bc17f46e640c44fa30ff7b246dfc40b7c161
 
 build:
   number: 0

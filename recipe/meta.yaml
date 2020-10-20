@@ -10,7 +10,7 @@ source:
   sha256: 66dbcbc2f9ca2be4de17212f9312ed0049779ad46f62bf4674e6e5a2cf78bc4e
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - serve=sagemaker_containers.cli.serve:main
     - train=sagemaker_containers.cli.train:main
